@@ -1,0 +1,17 @@
+lab3report.pdf
+
+Lizzie Steilberg
+9.30.24
+
+Fibonacci algorithms:
+From what we talked about in class, I expected the straight recursive fibonacci algorithm to have a big-O complexity of  O(2^N). The number of calls that my program counted definitely increase exponentially, although I think with a base slightly less than 2. 
+
+The Fibonacci with memoization algorithm had a complexity on the order of O(N), with an even 2 function calls added for each
+number in the sequence. This was also what we'd discussed in class. As would be expected, the Fibonacci with memoization program was also more efficient, running about 2.4 ms faster than the first algorithm. 
+
+Sorting algorithms:
+The number of comparisons made by the selection sort algorithm increased quadratically (O(N^2)), although the number of calls increased by slightly less than a factor of 2 each time. For a pre-sorted list, however, selection sort made 0 swaps.
+
+The number of comparisons made by the Quicksort algorithm appeared to have a linear complexity of O(NlogN), as the list of N items is iterated over logN number of subdivisions. Unlike selection sort, the best-case scenario of an already sorted list still required a fair amount of swapping. In the worst-case scenario, when lots of subdivisions are required, quicksort has a complexity closer to the order of O(N^2). 
+
+Nonetheless, the runtime for quicksort was far less than that of selection sort, which took about 7 seconds to run. This is because swaps are more computationally efficient to perform than comparisons and, if you sum up the total comparisons and swaps made by each algorithm, quicksort performs far fewer operations in general. 
